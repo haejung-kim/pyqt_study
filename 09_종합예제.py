@@ -12,17 +12,22 @@ class MyWin:
         self.dlg.show()
 
     def biman_decide(self,biman_rate,height,weight) :
-        newline="\n"
-        if (biman_rate<=90):
-            self.dlg.lineEdit.setText(f'키:{height} {newline} 몸무게:{weight} \n 비만: 저체중')
+        if (biman_rate <= 90):
+            self.dlg.lineEdit.setText(f'''
+            키:{height} \n
+            몸무게:{weight}
+            비만: 저체중
+                ''')
             self.dlg.label_4.setPixmap(QPixmap('bi01.jpg'))
-        elif (biman_rate<=110) :
+
+        elif(biman_rate<=110):
             self.dlg.lineEdit.setText(f'''
             키:{height} \n
             몸무게:{weight}
             비만: 정상
                 ''')
             self.dlg.label_4.setPixmap(QPixmap('bi02.jpg'))
+
         elif (biman_rate <= 120):
             print("3")
             self.dlg.lineEdit.setText(f'''
@@ -43,9 +48,9 @@ class MyWin:
     def fn(self):
         height = self.dlg.spinBox.value()
         weight = self.dlg.spinBox_2.value()
-        print(f'height:{height},weight:{weight}')
         st_weight  = (height-100) * 0.85
         biman_rate = math.floor(weight / st_weight * 100)
+        print(f'height:{height},weight:{weight}')
         print(f'st_weight:{st_weight},biman_rate:{biman_rate}')
         print(biman_rate,height,weight)
         self.biman_decide(biman_rate,height,weight)
