@@ -3,6 +3,7 @@
 ### class속성 (3가지)
 
 instance :  self.이름,  instance.이름 
+
 class속성:  class이름   instance.이름 (class.이름 추가지원)
 -> 내부에서 차이남 
 
