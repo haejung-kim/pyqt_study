@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>399</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>110</y>
+     <width>56</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>키:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>170</y>
+     <width>56</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>몸무게:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>220</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>결과</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>110</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>120</number>
+   </property>
+   <property name="maximum">
+    <number>200</number>
+   </property>
+   <property name="value">
+    <number>160</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>160</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>30</number>
+   </property>
+   <property name="maximum">
+    <number>200</number>
+   </property>
+   <property name="value">
+    <number>50</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>290</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="pixmap">
+    <pixmap>bi01.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>60</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>비만도</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>280</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

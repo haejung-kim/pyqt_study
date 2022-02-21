@@ -2,6 +2,10 @@ from PyQt5.QtWidgets import *
 import sys
 app=QApplication(sys.argv)
 
+
+def fn(self):
+    print("click....")
+
 # Window 생성
 dlg=QDialog()  #window 생성
 dlg.setWindowTitle("다이아로그")
@@ -13,6 +17,7 @@ vbox=QVBoxLayout()
 
 # (재료:Pushbutton, LineEdit)
 btn = QPushButton('클릭')
+btn.clicked.connect(fn)
 lineEdit=QLineEdit()
 
 # 재료 > layout 추가(addWidget)
